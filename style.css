@@ -176,75 +176,12 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: #841c40;
     transform: translateY(-10px);
-
-}
-
-/* #portfolio {
-    padding: 50px 0;
     
-}
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
 
 }
-.work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-.layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center ;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-.layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.layer a {
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
 
-.work:hover img {
-    transform: scale(1.1);
-}
-.work:hover .layer {
-    height: 100%;
-
-} */
 .left {
     flex-basis: 35%;
 }
@@ -257,7 +194,7 @@ nav ul li a:hover::after {
 
 }
 .left p i {
-    color: #ff004f;
+    color: #841c40;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -274,7 +211,7 @@ nav ul li a:hover::after {
 
 }
 .icons a:hover {
-    color: #ff004f;
+    color: #841c40;
     transform: translateY(-5px);
 
 }
@@ -282,7 +219,7 @@ nav ul li a:hover::after {
     display: inline-flex;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #841c40;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -290,11 +227,11 @@ nav ul li a:hover::after {
     transition: background 0.5s;
 }
 .btn:hover {
-    background:#ff004f;
+    background:#841c40;
 
 }
 .btn.btn{
-    background: #ff004f;
+    background: #8A1C3B;
     cursor: pointer;
     padding: 14px 60px;
     font-size: 18px;
@@ -348,7 +285,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #ff004f;
+        background: #841c40;
         position: fixed;
         top: 0;
         right: -200px;
