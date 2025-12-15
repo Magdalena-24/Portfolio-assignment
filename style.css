@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
-    /* background: black; */
+
 }
 html {
     scroll-behavior: smooth;
@@ -19,8 +19,8 @@ body {
     height: 100vh;
     background-image: url(img/background2.png);
     background-repeat: no-repeat;
-    background-size: contain;      /* optional, makes it fill the screen */
-    background-position: right; /* optional, keeps you nicely centered */
+    background-size: contain;
+    background-position: right; 
 }
 
 
@@ -69,6 +69,10 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+
+#my-name {
+    color: #8A1C3B;
+}
 }
 .header-text h1 {
     font-size: 60px;
