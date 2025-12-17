@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portolio | Magdalena</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cfee6763fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 
-    <div id="header">
+    <section id="header">
         <div class="container">
             <nav>
                 <img src="img/logo.png" alt="logo" class="logo">
@@ -28,7 +28,7 @@
                 <h1>Hi, I'm <span id="my-name">Magdalena</span><br>from Namibia</h1>
             </div>
         </div>
-    </div>
+    </section>
     <section class="about-me">
     <div id="about">
         <div class="container">
@@ -42,9 +42,9 @@
                     </p>
 
                     <div class="titles">
-                        <p class="tabs active" onclick="opentab('skills')">Skills</p>
-                        <p class="tabs" onclick="opentab('experience')">Experince</p>
-                        <p class="tabs" onclick="opentab('education')">Education</p>
+                        <p class="tabs active" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tabs" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tabs" onclick="opentab(event, 'education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2024 - 2025</span><br>Front-end engineer at SU</li>
+                            <li><span>2024 - 2025</span><br>Front-end engineer at Stellenbosch university (school project)</li>
                             <li><span>2023 </span><br>Data analyst intern at Pwc Namibia</li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@
                         <ul>
                             <li><span>2025</span><br>Full-stack development Training at Code - Blossom</li>
                             <li><span>2025</span><br>Generative AI at Oracle university</li>
-                            <li><span>2022 - 2024</span><br>Data Engineerig at SU</li>
+                            <li><span>2022 - 2024</span><br>Data Engineerig at Stellenbosch university</li>
                     
                         </ul>
                     </div>
@@ -73,37 +73,7 @@
     </div>
 
 </section>
-
-<script>
-    var tablinks = document.getElementsByClassName("tabs")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-
-    function opentab(tabname) {
-
-    for(tablink of tablinks){
-        tablink.classList.remove("active")
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-    }
-
-    event.currentTarget.classList.add("active")
-    document.getElementById(tabname).classList.add("active-tab")
-
-
-    }
-</script>
-<script>
-
-    var menu = document.getElementById("menu")
-
-    function openmenu() {
-        menu.style.right="0"
-    }
-    function closemenu() {
-        menu.style.right="-200px"
-    }
-</script>
+    
 
 <section class="my-services">
     <div id="services">
@@ -147,11 +117,23 @@
                 </div>
             </div>
                 <div class="right">
-                    <form action="https://formspree.io/f/xanrbpnr" method="POST">
-                        <input type="text" name="Name" placeholder="Name" required>
-                        <input type="text" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form id="contact-form" action="https://formspree.io/f/xanrbpnr" method="POST">
+                        <p>
+                            <input type="text" name="Name" placeholder="Name" id="form-name">
+                            <span id="name-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <input type="text" name="email" placeholder="Your Email" id="form-email">
+                            <span id="email-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <textarea name="message" rows="6" placeholder="Your message" id="form-message"></textarea>
+                            <span id="message-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            <button type="reset" class="btn btn2" onclick="resetErrors()">Reset</button>
+                        </p>
                     </form>
                 </div>
         </div>
@@ -162,5 +144,6 @@
             <p>Copyright &copy; Magdalena Djuulume</p>
         </div>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
