@@ -69,11 +69,11 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
-
+}
 #my-name {
     color: #8A1C3B;
 }
-}
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
@@ -166,7 +166,7 @@ nav ul li a:hover::after {
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s transform 0.5s;
+    transition: background 0.5ms 0.5ms;
 }
 
 .services-list div i {
@@ -180,7 +180,8 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #841c40;
+    background: rgb(132, 28, 64);
+    opacity: 1;
     transform: translateY(-10px);
     
 
@@ -272,13 +273,18 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width:600px){
-    /* #header {
-        
-    } */
+
+    #header {
+        height: auto;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: top center;
+    }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 60vh;
         font-size: 16px;
+
     }
     .header-text h1 {
         font-size: 30px;
@@ -322,6 +328,9 @@ nav .fa-solid {
     .about-col-1 {
         margin-bottom: 30px;
     }
+    .about-col-1 img {
+         margin-left: -80px;
+    }
     .about-col-2 {
         font-size: 14px;
     }
@@ -334,4 +343,10 @@ nav .fa-solid {
     }
     
 
+}
+@media only screen and (max-width:412px){
+    #about {
+        padding-top: 0;
+        margin: 0;
+    }
 }
