@@ -18,6 +18,8 @@ The project is structured so that other developers can easily understand, extend
 
 - JavaScript (Vanilla JS) – Interactivity and dynamic behavior
 
+- Font Awesome – Icons and visual elements
+
 - Deployment: Netlify
 
 ⚠️ No frameworks are used in this project.
