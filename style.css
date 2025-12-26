@@ -215,6 +215,12 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
 
 }
+
+.whatsapp-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .icons a:hover {
     color: #841c40;
     transform: translateY(-5px);
