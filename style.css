@@ -221,6 +221,27 @@ nav ul li a:hover::after {
   color: inherit;
 }
 
+.contact-icon {
+  display: inline-flex;
+  align-items: left;
+  gap: 8px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+  transform: translateX(3px);
+}
+
+.contact-icon:hover i {
+  opacity: 0.8;
+}
+
+
 .icons a:hover {
     color: #841c40;
     transform: translateY(-5px);
